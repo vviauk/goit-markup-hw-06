@@ -302,13 +302,25 @@ p {
 
 }
 .frame {
+  padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.comments-frame {
-  width: 448px;
-  height: 120px;
+.frame:hover,
+.frame:focus {
+  border-color: rgb(33, 150, 243);
+}
+.feedback {
+  padding: 0;
+  min-width: 448px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+.feedback:hover,
+.feedback:focus {
+  border-color: rgb(33, 150, 243);
 }
 
 .submit-button {
@@ -588,6 +600,9 @@ p {
   list-style: none;
   margin-right: 70px;
 }
+.footer-list:last-child {
+  margin-right: 0;
+}
 .footer-social {
   width: 44px;
   height: 44px;
@@ -623,6 +638,27 @@ p {
   background-color: #2196f3;
 }
 
+.footer-frame {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-width: 358px;
+  min-height: 50px;
+  color: white;
+  background-color: inherit;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 0;
+}
+.footer-submit-btn {
+  min-width: 200px;
+  min-height: 50px;
+  color:#fff;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+
+}
 .footer-email {
   display: flex;
   margin-top: 9px;
