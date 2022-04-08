@@ -76,30 +76,30 @@
               <label class="form-label" for="name">Имя
                 <input class="frame" type="text" name="username" id="name" autofocus>
               </label>
-              <label for="tel">Телефон
+              <label class="form-label" for="tel">Телефон
                 <input class="frame" type="tel" name="tel" id="tel">
               </label>
-              <label for="email">Почта
+              <label class="form-label" for="email">Почта
                 <input class="frame" type="email" name="email" id="email">
               </label>
 
 
 
-              <label for="coments">Комментарий
-
+              <label class="form-label" for="coments">Комментарий
                 <textarea class="feedback" 
                 name="feedback" 
-                id="" rows="5"
+                id=""
+                rows="5"
                 placeholder="Введите текст">
-                          </textarea>
+                </textarea>
               </label>
 
 
-              <input class="checkbox" type="checkbox" name="checkbox" value="checkbox"></input>
-              <span font-family: 'Roboto' ; font-style: normal; font-weight: 400; font-size: 14px; line-height: 24px;
-                letter-spacing: 0.03em; color: #757575;>Соглашаюсь с рассылкой и принимаю Условия договора</span>
-
-
+              <label class="checkbox-field">
+                <input class="checkbox" type="checkbox" name="checkbox" value="checkbox"/>
+                <span class="checkbox-icon"></span>
+                <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
+              </label>
 
 
               <button class="submit-button" type="submit">Отправить</button>
@@ -476,7 +476,10 @@
               id="email" required
               placeholder="E-mail">
             </label>
-            <button class="footer-submit-btn" type="submit">Подписаться</button>
+            <button class="footer-submit-btn" type="submit">Подписаться  
+              <svg class="footer-send-icon" width="24" height="24">
+              <use href="images/icons.svg#icon-icon"></use>
+            </svg></button>
           </form>
         </li>
       </ul>
