@@ -224,6 +224,8 @@ p {
   background-color: #188ce8;
 }
 
+/* backdrop */
+
 .backdrop {
   position: fixed;
   min-width: 100%;
@@ -257,12 +259,12 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  animation: changeBgColor;
+  /* animation: changeBgColor;
   animation-duration: 3000ms;
   animation-iteration-count: 1;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
-@keyframes changeBgColor {
+/* @keyframes changeBgColor {
   0% {
     background-color: white;
   }
@@ -274,7 +276,7 @@ p {
   100% {
     background-color: #fff;
   }
-}
+} */
 
 .modal-button {
   position: fixed;
@@ -291,30 +293,52 @@ p {
 }
 .modal-button:hover,
 .modal-button:focus {
-  background-color: #fff;
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
-  position: absolute;
-  margin-top: 40px;
   margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
+.form {
+  max-width: 528px;
+  max-height: 581px;
+  padding: 40px;
+  }
 
 .form-label {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  /* max-width: 448px; */
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-label input {
   width: 100%;
-  margin-right: 40px;
+}
 
+.feedback {
+  margin-top: 4px;
+  min-height: 120px;
 }
 .frame {
+  display: block;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
   padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   outline: transparent;
+  
 }
 .frame:hover,
 .frame:focus {
@@ -322,7 +346,7 @@ p {
 }
 .feedback {
   padding: 0;
-  min-width: 448px;
+  width: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
@@ -348,9 +372,15 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.checkbox-label {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 .checkbox-icon {
   display: inline-block;
-  width: 15px;
+  width: 16px;
   height: 15px;
   margin: 0;
   margin-right: 10px;
@@ -360,19 +390,15 @@ p {
 .checkbox:checked + .checkbox-icon {
   border-color: transparent;
   border-color: #2196F3;
-  /* background-color: #2196F3; */
-  background-image: url(../images/olga.jpg);
-  /* background-image: url(../images/icons.svg#icon-icon-check); */
+  background-color: #2196F3;
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin:border-box;
 }
 .checkbox-link {
   color: #2196f3;
 }
-.feedback::placeholder {
-  color: red;
 
-}
 .submit-button {
   color: #fff;
   font-weight: 700;
@@ -389,6 +415,7 @@ p {
 .submit-button:focus {
   background-color: #188ce8;
 }
+
 /* main section 1*/
 
 .visually-hidden {
@@ -650,6 +677,11 @@ p {
   list-style: none;
   margin-right: 70px;
 }
+.footer-list:nth-child(2) {
+  margin-right: 93px;
+
+}
+
 .footer-list:last-child {
   margin-right: 0;
 }
@@ -719,6 +751,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 0;
+  padding-left: 29px;
   margin: 0;
   margin-left: 12px;
   font-weight: 700;
@@ -768,7 +801,12 @@ p {
 .media-title {
   display: flex;
 }
-
+.footer-form {
+  display: flex;
+}
+.footer-send-icon {
+  margin-left: 10px;
+}
 /* portfolio page*/
 
 .main-portfolio {

@@ -70,37 +70,42 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p class="modal-title"> <b>Оставьте свои данные, мы вам перезвоним</b> </p>
-
+            
             <form class="form" name="" id="">
-              <label class="form-label" for="name">Имя
-                <input class="frame" type="text" name="username" id="name" autofocus>
-              </label>
-              <label class="form-label" for="tel">Телефон
-                <input class="frame" type="tel" name="tel" id="tel">
-              </label>
-              <label class="form-label" for="email">Почта
-                <input class="frame" type="email" name="email" id="email">
-              </label>
-
-
-
-              <label class="form-label" for="coments">Комментарий
-                <textarea class="feedback" 
-                name="feedback" 
-                id=""
-                rows="5"
-                placeholder="Введите текст">
-                </textarea>
-              </label>
-
-
-              <label class="checkbox-field">
-                <input class="checkbox" type="checkbox" name="checkbox" value="checkbox"/>
-                <span class="checkbox-icon"></span>
-                <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
-              </label>
-
+              <div class="form-field">
+                <p class="modal-title"> <b>Оставьте свои данные, мы вам перезвоним</b> </p>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="name">Имя
+                  <input class="frame" type="text" name="username" id="name"/>
+                </label>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="tel">Телефон
+                  <input class="frame" type="tel" name="tel" id="tel"/>
+                </label>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="email">Почта
+                  <input class="frame" type="email" name="email" id="email"/>
+                </label>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="coments">Комментарий<textarea class="feedback" 
+                  name="feedback" 
+                  id=""
+                  rows="5"
+                  placeholder="Введите текст">
+                  </textarea>
+                </label>
+              </div>
+              <div class="form-field">
+                <label class="checkbox-field">
+                  <input class="checkbox" type="checkbox" name="checkbox" value="checkbox"/>
+                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a></span>
+                </label>
+              </div>
 
               <button class="submit-button" type="submit">Отправить</button>
             </form>
@@ -116,13 +121,8 @@
               
               color: rgba(117, 117, 117, 0.5); -->
 
-
-
-            <button class="modal-button" data-modal-close><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
-                  fill="black" />
+            <button class="modal-button" data-modal-close><svg width="30" height="30">
+              <use href="images/icons.svg#icon-close"></use>
               </svg></button>
           </div>
         </div>
@@ -464,22 +464,18 @@
                 </svg>
               </a>
             </li>
-            </ul>
+          </ul>
         </li>
         <li class="footer-list">
           <h3 class="media-title">Подпишитесь на рассылку</h3>
-          <form action="">
-            <label for="email">
-              <input class="footer-frame" 
-              type="email" 
-              name="email" 
-              id="email" required
-              placeholder="E-mail">
+          <form class="footer-form" action="">
+            <label class="footer-submit" for="email">
+              <input class="footer-frame" type="email" name="email" id="email" required placeholder="E-mail">
             </label>
-            <button class="footer-submit-btn" type="submit">Подписаться  
+            <button class="footer-submit-btn" type="submit">Подписаться
               <svg class="footer-send-icon" width="24" height="24">
-              <use href="images/icons.svg#icon-icon"></use>
-            </svg></button>
+                <use href="images/icons.svg#icon-icon"></use>
+              </svg></button>
           </form>
         </li>
       </ul>
