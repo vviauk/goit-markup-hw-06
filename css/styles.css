@@ -313,8 +313,9 @@ p {
 
 .form-label {
   display: block;
+  position: relative;
+  justify-content: center;
   text-align: left;
-  /* max-width: 448px; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -323,7 +324,22 @@ p {
 .form-label input {
   width: 100%;
 }
-
+.frame {
+  display: flex;
+  padding-left: 25px;
+}
+.form-icons {
+  position: absolute;
+  top: 28px;
+  left: 5px;
+}
+/* .icon-position {
+  display: flex;
+} */
+.form-label:hover .form-icons,
+.form-label:focus .form-icons {
+  fill:rgba(33, 150, 243, 1)
+}
 .feedback {
   margin-top: 4px;
   min-height: 120px;
@@ -338,7 +354,6 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
   outline: transparent;
-  
 }
 .frame:hover,
 .frame:focus {
@@ -679,7 +694,6 @@ p {
 }
 .footer-list:nth-child(2) {
   margin-right: 93px;
-
 }
 
 .footer-list:last-child {
